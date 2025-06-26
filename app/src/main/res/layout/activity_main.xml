@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:hint="Nombre" />
+        android:hint="@string/nombre" />
 
     <EditText
         android:id="@+id/apPat"
@@ -45,7 +45,7 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar"
+        android:text="@string/guardar"
         android:layout_marginTop="40dp"
         android:layout_gravity="center" />
 

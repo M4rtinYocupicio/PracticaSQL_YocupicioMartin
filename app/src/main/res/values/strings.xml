@@ -3,4 +3,6 @@
     <string name="primer_apellido">Primer apellido</string>
     <string name="segundo_apellido">Segundo apellido</string>
     <string name="carrera">Carrera</string>
+    <string name="nombre">Nombre</string>
+    <string name="guardar">Guardar</string>
 </resources>
