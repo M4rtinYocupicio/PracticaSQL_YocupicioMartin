@@ -8,13 +8,6 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre:"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="15dp"
-        android:layout_marginTop="30dp"/>
 
     <EditText
         android:id="@+id/nombre"
@@ -22,15 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:hint="Nombre"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Apellido paterno:"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="15dp"
-        android:layout_marginTop="30dp"/>
+        android:hint="Nombre" />
 
     <EditText
         android:id="@+id/apPat"
@@ -38,15 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:hint="Apellido paterno"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Apellido materno:"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="15dp"
-        android:layout_marginTop="30dp"/>
+        android:hint="@string/primer_apellido" />
 
     <EditText
         android:id="@+id/apMat"
@@ -54,15 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:hint="Apellido materno"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Carrera:"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="15dp"
-        android:layout_marginTop="30dp"/>
+        android:hint="@string/segundo_apellido" />
 
     <EditText
         android:id="@+id/carrera"
@@ -70,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:hint="Carrera"/>
+        android:hint="@string/carrera" />
 
     <Button
         android:id="@+id/btnGuardar"
@@ -78,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Guardar"
         android:layout_marginTop="40dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
 
 </LinearLayout>

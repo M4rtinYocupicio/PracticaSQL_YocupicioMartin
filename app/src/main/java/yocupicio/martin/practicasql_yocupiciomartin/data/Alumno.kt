@@ -1,4 +1,4 @@
-package yocupicio.martin.practicasql_yocupiciomartin
+package yocupicio.martin.practicasql_yocupiciomartin.data
 
 data class Alumno(
     val nombre: String,
