@@ -5,4 +5,5 @@
     <string name="carrera">Carrera</string>
     <string name="nombre">Nombre</string>
     <string name="guardar">Guardar</string>
+    <string name="alumnos">Alumnos</string>
 </resources>
