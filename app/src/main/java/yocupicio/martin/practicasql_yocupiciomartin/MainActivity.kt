@@ -23,14 +23,13 @@ class MainActivity : AppCompatActivity() {
         val btnGuardar = findViewById<Button>(R.id.btnGuardar)
 
         btnGuardar.setOnClickListener {
-            
+
             val nombre = etNombre.text.toString().trim()
             val apPat = etApPat.text.toString().trim()
             val apMat = etApMat.text.toString().trim()
             val carrera = etCarrera.text.toString().trim()
 
             val alumno = Alumno(nombre, apPat, apMat, carrera)
-
 
 
             if (nombre.isEmpty() || apPat.isEmpty() || apMat.isEmpty() || carrera.isEmpty()) {
