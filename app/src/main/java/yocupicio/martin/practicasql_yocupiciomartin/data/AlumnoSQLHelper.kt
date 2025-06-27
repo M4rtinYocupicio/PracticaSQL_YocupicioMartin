@@ -48,4 +48,24 @@ class AlumnoSQLHelper(context: Context): SQLiteOpenHelper(context, DATABASE_NAME
         db.insert(TABLE_NAME, null, values)
         db.close()
     }
+
+    fun getAllAlumnos():List<Alumno>{
+        val alumnosList = mutableListOf<Alumno>()
+        val db = writableDatabase
+        val query = "SELECT * FROM $TABLE_NAME"
+        val cursor = db.rawQuery(query, null)
+
+        while(cursor.moveToNext()){
+            val nombre = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NOMBRE))
+            val apPaterno = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PRIMER_APELLIDO))
+            val apMaterno = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_SEGUNDO_APELLIDO))
+            val carrera = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CARRERA))
+
+            val alumno = Alumno(nombre, apPaterno, apMaterno, carrera)
+            alumnosList.add(alumno)
+        }
+        cursor.close()
+        db.close()
+        return alumnosList
+    }
 }
