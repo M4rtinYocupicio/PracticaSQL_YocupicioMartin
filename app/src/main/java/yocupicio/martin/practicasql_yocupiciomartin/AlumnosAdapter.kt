@@ -29,10 +29,4 @@ class AlumnosAdapter(private var alumnos: List<Alumno>, context: Context): Recyc
         holder.nombretv.text = "${alumno.nombre} ${alumno.apPaterno} ${alumno.apMaterno}"
         holder.carreratv.text = "${alumno.carrera}"
     }
-
-
-
-
-
-
 }
